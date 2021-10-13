@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./survry.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="outside">
+        <form id="survey-form" action="survry.css" method="post">
+            <h1 id="title1" >Application for job interview</h1>
+            <p id="note1"><b>Note:</b>Form is to be completed before 25 October</p>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label id="address-label" for="address">Address:</label>
+                    <input type="text" required id="address" name="user_address" placeholder="Enter your address">
+                </div>
+                <div>
+                    <label id="gmail-label" for="gmail">G-mail:</label>
+                    <input type="text" required id="G-mail" name="user_mail" placeholder="Enter your G-mail">
+                </div>
+                <div>
+                    <label id="number-label" for="phone">Phone Number:</label>
+                    <input type="number" required id="number" name="user_number" placeholder="Enter 10 digit number">
+                </div>
+                <div>
+                    <label id="iq-label" for="iq" >IQ:</label>
+                    <input type="number" required id="IQ" name="user_IQ" placeholder="Enter your IQ here">
+                    <div>
+                        <label for="Gender">Gender:</label>
+                        <p>
+                            <input type="radio" name="gender" value="male" checked> Male<br>
+                            <input type="radio" name="gender" value="female" checked> female<br>
+                            <input type="radio" name="gender" value="Other" checked> Other<br>
+                        </p>
+                    </div>
+                    <label for="date-lable">Date of form filled</label>
+                    <input type="date" name="dday">
+            </fieldset>
+            <fieldset>
+                <label for="Gender">Check All That Apply:</label>
+                <p>
+                    <input type="checkbox" name="xyz1" value="xyz1">I don't have any backlogs<br>
+                    <input type="checkbox" name="xyz2" value="xyz2">My CGPA is >=7.0<br>
+                    <input type="checkbox" name="xyz3" value="xyz3">I have done internships during college<br>
+                    <input type="checkbox" name="xyz4" value="xyz4">I have decent knowledge of C++ or Java<br>
+                    <input type="checkbox" name="xyz5" value="xyz5">I have good command over DSA<br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="Work-timing">Work-timing</label>
+                    <select id="dropdown">
+                        <option value="full">Full Time</option>
+                        <option value="Part">Part Time</option>
+                        <option value="On weekends">On weekends</option>
+                    </select>
+                    <label for="year">College Year</label>
+                    <select id="dropdown2">
+                        <option value="First">First Year</option>
+                        <option value="Second">Second Year</option>
+                        <option value="Third">Third Year</option>
+                        <option value="Forth">Fourth Year</option>
+                        <option value="Dropout">Dropout</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Eassy section</legend>
+                <div>
+                    <label for="msg"></label>
+                    <p>Why should we hire you? Explain in 50 or more words.</p>
+                    <textarea id="msg" name="user_msg" rows="4" cols="40"
+                    placeholder="Enter your answer"></textarea>
+                </div>
+                <p>Upload Police Clearance Certificate, Bank Statement and Medical Certificates here:
+                <button>Attach Files</button></p>
+            </fieldset>
+            <div id="Submitbutton">
+                <button type="submit" id="submit">Send Your Application</button></div>
+            </div> 
+        </form>
+    </div>
+</body>
+</html>
